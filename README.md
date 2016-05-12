@@ -13,7 +13,6 @@ Time spent: 6 hours total
 * [x] Optional: Animating the results via an animation block with custom easing
 * [x] Optional: Showing the bill split difference for 1-4 persons
 * [x] Optional: Added Image Assets (for the people icon)
-* [x] Optional: Added Image Assets (for the people icon)
 
 
 ## GIF Walkthrough of User Stories
