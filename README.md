@@ -3,7 +3,7 @@ This is an iOS application for determining tip amount and splitting a bill betwe
 
 Time spent: 6 hours total
 
-## Completed user stories: 
+## Completed User Stories: 
 
 * [x] Required: User can enter in an amount and determine the total with tip
 * [x] Required: Via a segment controller the user can change the tip percentage
