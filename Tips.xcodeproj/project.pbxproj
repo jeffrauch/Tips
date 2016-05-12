@@ -14,6 +14,9 @@
 		3020F5661BFEA2F4000131EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3020F5641BFEA2F4000131EE /* LaunchScreen.storyboard */; };
 		3020F5711BFEA2F4000131EE /* TipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020F5701BFEA2F4000131EE /* TipsTests.swift */; };
 		3020F57C1BFEA2F4000131EE /* TipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020F57B1BFEA2F4000131EE /* TipsUITests.swift */; };
+		30C674D21CE01F99002139F5 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30C674D11CE01F99002139F5 /* DINPro-Bold.otf */; };
+		30C674D41CE01FA5002139F5 /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30C674D31CE01FA5002139F5 /* DINPro-Medium.otf */; };
+		30C674D61CE01FAD002139F5 /* DINPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30C674D51CE01FAD002139F5 /* DINPro.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		3020F5771BFEA2F4000131EE /* TipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3020F57B1BFEA2F4000131EE /* TipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsUITests.swift; sourceTree = "<group>"; };
 		3020F57D1BFEA2F4000131EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C674D11CE01F99002139F5 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
+		30C674D31CE01FA5002139F5 /* DINPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Medium.otf"; sourceTree = "<group>"; };
+		30C674D51CE01FAD002139F5 /* DINPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINPro.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		3020F54F1BFEA2F4000131EE = {
 			isa = PBXGroup;
 			children = (
+				30C674D51CE01FAD002139F5 /* DINPro.otf */,
+				30C674D31CE01FA5002139F5 /* DINPro-Medium.otf */,
+				30C674D11CE01F99002139F5 /* DINPro-Bold.otf */,
 				3020F55A1BFEA2F4000131EE /* Tips */,
 				3020F56F1BFEA2F4000131EE /* TipsTests */,
 				3020F57A1BFEA2F4000131EE /* TipsUITests */,
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					3020F5571BFEA2F4000131EE = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 4S6P8ENA43;
 					};
 					3020F56B1BFEA2F4000131EE = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -229,6 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C674D61CE01FAD002139F5 /* DINPro.otf in Resources */,
+				30C674D41CE01FA5002139F5 /* DINPro-Medium.otf in Resources */,
+				30C674D21CE01F99002139F5 /* DINPro-Bold.otf in Resources */,
 				3020F5661BFEA2F4000131EE /* LaunchScreen.storyboard in Resources */,
 				3020F5631BFEA2F4000131EE /* Assets.xcassets in Resources */,
 				3020F5611BFEA2F4000131EE /* Main.storyboard in Resources */,
@@ -397,10 +410,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffrauch.Tips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +425,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffrauch.Tips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +503,7 @@
 				3020F5821BFEA2F4000131EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3020F5831BFEA2F4000131EE /* Build configuration list for PBXNativeTarget "TipsTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +512,7 @@
 				3020F5851BFEA2F4000131EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3020F5861BFEA2F4000131EE /* Build configuration list for PBXNativeTarget "TipsUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +521,7 @@
 				3020F5881BFEA2F4000131EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
